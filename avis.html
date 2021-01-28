@@ -1,0 +1,78 @@
+<!--
+  ~          _   __         __
+  ~         / | / /  ___   / /_  __  __   _____  ____
+  ~        /  |/ /  / _ \ / __/ / / / /  / ___/ / __ \
+  ~       / /|  /  /  __// /_  / /_/ /  / /    / /_/ /
+  ~      /_/ |_/   \___/ \__/  \__,_/  /_/     \____/
+  ~
+  ~      Copyright (c)  27/11/2020 11:33, DESHORS
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Théo DESHORS - Avis</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="author" content="Deshors Théo">
+    <meta name="keywords" content="Portfolio, étudiant informatique, projet">
+    <meta name="description" content="Portfolio Théo DESHORS, Etudiant en première année en informatique à l'université Aix Marseille. Ce site est dédié à la validaiton du projet M1105">
+
+
+    <link rel="icon" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="icon/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="icon/android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" href="icon/android-chrome-512x512.png">
+
+    <link id="pagestyle" rel="stylesheet" href="css/style.css"/>
+    <link rel="alternate stylesheet" type="text/css" href="css/stylereverse.css" title="alternate 1" />
+    <script src="js/changestyle.js"></script>
+</head>
+<body>
+<header>
+    <div class="nav">
+        <a href="index.html">Acceuil</a>
+        <a href="projet.html" >Mes projets</a>
+        <a href="#" class="current">Avis</a>
+
+    </div>
+</header>
+
+<div class="avis">
+    <h1>Donnez mois votre avis</h1>
+
+    <p>N'hésite pas à venir me laisser ton avis pour apporter toutes futures modifications ou des conseils :)</p>
+    <p>(Meilleure mise en page avec tickmark sur chrome)</p>
+
+    <form action="mailto:deshors.theo@gmail.com"  method="post" enctype="text/plain">
+
+        <label>Nom : </label><br>
+        <input type="text" required="required" name="nom" placeholder="Nom"><br>
+
+        <label>Prénom : </label>
+        <input type="text" required="required" name="prenom" placeholder="Prénom"><br>
+
+        <label>Votre note : </label>
+        <input type="range" min="0" name="note" max="5" list="tickmarks">
+        <datalist id="tickmarks">
+            <option value="0">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+        </datalist>
+        <br>
+        <label >Votre commentaire : </label>
+        <textarea required="required" name="text" rows="5" cols="50" placeholder="Votre texte ..."></textarea>
+        <button type="submit">Envoyer mon avis</button>
+    </form>
+</div>
+<footer>
+    <p>Site réalisé par Théo DESHORS</p>
+    <div class="nav"><a href="#" onclick="setActiveStyleSheet('default'); return false;" id="stylesheet1" >Style par défaut </a>
+        <a href="#"  onclick="setActiveStyleSheet('alternate 1'); return false;" id="stylesheet2" >Style bizzare </a></div>
+</footer>
+</body>
+</html>
